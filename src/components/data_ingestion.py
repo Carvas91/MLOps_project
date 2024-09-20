@@ -7,7 +7,18 @@ from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
 @dataclass
-class DataIngetionConfig:
+class DataIngestionConfig:
     train_data_path: str=os.path.join('artifacts', 'train_csv')
     test_data_path: str = os.path.join('artifacts', 'test_csv')
     raw_data_path: str = os.path.join('artifacts', 'raw_csv')
+
+class DataIngestion:
+    def __init(self):
+        self.ingestion_config = DataIngestionConfig()
+    def initiate_data_ingestion(self):
+        logging.info('Entered the data ingestion metod or component')
+        try:
+            pass
+        except:
+            pass
+        
