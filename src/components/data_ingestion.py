@@ -13,7 +13,7 @@ class DataIngestionConfig:
     raw_data_path: str = os.path.join('artifacts', 'raw_csv')
 
 class DataIngestion:
-    def __init(self):
+    def __init__(self):
         self.ingestion_config = DataIngestionConfig()
     def initiate_data_ingestion(self):
         logging.info('Entered the data ingestion metod or component')
@@ -42,3 +42,6 @@ class DataIngestion:
         except Exception as e:
             raise CustomException(e,sys)
 
+if __name__ == "__main__":
+    obj = DataIngestion()
+    obj.initiate_data_ingestion()
